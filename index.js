@@ -1,18 +1,16 @@
 // main
-const fs = require('fs');
-const cons = console();
+const config = require('./config.js');
 function main(){
-  if (ChkUpdate(1,0,0.5) == true){
-     cons.log("Checking update finished. Your version is up to date!");
+  if (ChkUpdate(config.version) == true){
+     console.log("Checking update finished. Your version is up to date!");
      app();
   }else{
-     cons.error("you are not up to date ;(");
-     procces.quit();
+     console.error("you are not up to date ;(");
+     out();
      }
 }
 function ChkUpdate(a){
-  var lastetver = "1.0.2";
-  if (a = lastetver){
+  if (a = config.lastet){
      return true;
   } else {
      return false;
@@ -22,7 +20,11 @@ function app()
 {
    // your app here!
 }
-
+function out()
+{
+  // do the code when it was not up to date.
+}
+//
 /*
 Replace app function to your app.
 replace lastetver varible to lastet version of your app.
