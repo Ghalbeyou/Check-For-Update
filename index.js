@@ -10,7 +10,7 @@ function main(){
      }
 }
 function ChkUpdate(a){
-  if (a = config.lastet){
+  if (a == config.lastet){
      return true;
   } else {
      return false;
