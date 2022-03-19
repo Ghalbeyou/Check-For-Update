@@ -7,6 +7,3 @@ exports.version = "APP VERSION";
 exports.lastet = "LASTET APP VERSION";
 // DO NOT EDIT DOWN CODES!
 exports.chk = true;
-if (chk == true){
-   console.log("LOADED CHECKER");
-}
