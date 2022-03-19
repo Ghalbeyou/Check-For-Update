@@ -32,3 +32,4 @@ Warning! This app is a checker for updates.
 We are updating it. 
 Thanks!!
 */
+main();
